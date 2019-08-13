@@ -22,7 +22,7 @@ pod 'VoiceConverter'
 
 ## Author
 
-huawentao, huawentao@vipkid.com.cn
+huawentao, ghost263sky@163.com
 
 ## License
 

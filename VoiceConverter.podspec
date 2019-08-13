@@ -9,34 +9,16 @@
 Pod::Spec.new do |s|
   s.name             = 'VoiceConverter'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of VoiceConverter.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/huawentao/VoiceConverter'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.summary          = 'VoiceConverter. used by self'
+  s.homepage         = 'https://github.com/huawt/VoiceConverter'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'huawentao' => 'huawentao@vipkid.com.cn' }
-  s.source           = { :git => 'https://github.com/huawentao/VoiceConverter.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.author           = { 'huawt' => 'ghost263sky@163.com' }
+  s.source           = { :git => 'https://github.com/huawt/VoiceConverter.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'VoiceConverter/Classes/**/*'
+  s.public_header_files = 'VoiceConverter/Classes/**/*.h'
+  s.frameworks = 'Foundation', 'AVFoundation'
+  s.vendored_libraries = 'VoiceConverter/Classes/lib/libopencore-amrnb.a', 'VoiceConverter/Classes/lib/libopencore-amrwb.a'
+  s.libraries = 'c', 'c++'
   
-  # s.resource_bundles = {
-  #   'VoiceConverter' => ['VoiceConverter/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
